@@ -1,22 +1,10 @@
-import { useState } from 'react';
-import { data } from './data';
+import UserChallenge from "./components/UserChallenge";
+
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  const handleClick = () => {
-    setTimeout(() => {
-      setCount((currentValue) => {
-        return currentValue + 1
-      });
-    }, 3000);
-  };
   return (
     <>
-      <button className="btn" onClick={handleClick}>
-        Click Me
-      </button>
-      <h1>{count}</h1>
+      <UserChallenge />
     </>
   );
 }
